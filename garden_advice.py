@@ -1,6 +1,3 @@
-# These functions separate the advice logic from the main program.
-# This makes the code easier to maintain and expand in the future.
-
 # Function to determine advice based on the season
 def get_season_advice(season):
     if season == "summer":
@@ -11,7 +8,7 @@ def get_season_advice(season):
         return "No advice for this season.\n"
 
 
-# Function to determine advice based on the plant type
+# Function to determine advice based on plant type
 def get_plant_advice(plant_type):
     if plant_type == "flower":
         return "Use fertiliser to encourage blooms."
@@ -21,16 +18,17 @@ def get_plant_advice(plant_type):
         return "No advice for this type of plant."
 
 
-# Hardcoded values for the season and plant type
-season = "summer"
-plant_type = "flower"
+# Allow users to enter their own choices
+season = input("Enter the season: ").lower()
+plant_type = input("Enter the plant type: ").lower()
 
-# Variable to hold gardening advice
+
+# Generate gardening advice
 advice = ""
-
-# Generate advice using functions
 advice += get_season_advice(season)
 advice += get_plant_advice(plant_type)
 
-# Print the generated advice
+
+# Display the generated advice
 print(advice)
+
