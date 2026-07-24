@@ -32,3 +32,14 @@ advice += get_plant_advice(plant_type)
 # Display the generated advice
 print(advice)
 
+
+# TODO: Examples of possible features to add:
+#
+# 25/07/2026 - Completed
+# - Added detailed comments explaining each block of code.
+# - Refactored the code into functions for better readability and modularity.
+# - Replaced hardcoded values with user input using input().
+#
+# Future Improvements:
+# - Store advice in a dictionary for multiple plants and seasons.
+# - Recommend plants based on the entered season.
